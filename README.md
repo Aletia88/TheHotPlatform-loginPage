@@ -1,1 +1,1 @@
-# The-hot-platform-frontend
+# The-Hot-platform-frontend
