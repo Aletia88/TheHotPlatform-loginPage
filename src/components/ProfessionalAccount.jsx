@@ -6,7 +6,7 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import FirstPage from './professionalAccount/firstPage'
+import FirstPage from './ProfessionalAccount/FirstPage'
 import Security from './ProfessionalAccount/Security'
 import ProfessionalInfo from './ProfessionalAccount/ProfessionalInfo'
 import ProfessionalInfo2 from './ProfessionalAccount/ProfessionalInfo2'
