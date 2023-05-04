@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 
 import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
@@ -6,8 +6,8 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import FirstPage from './Busniess-account/firstPage'
-import Security from './Busniess-account/Security'
+import FirstPage from './professionalAccount/firstPage'
+import Security from './ProfessionalAccount/Security'
 import ProfessionalInfo from './ProfessionalAccount/ProfessionalInfo'
 import ProfessionalInfo2 from './ProfessionalAccount/ProfessionalInfo2'
 // import { MuiThemeProvider, createMuiTheme } from '@mui/material/styles';
