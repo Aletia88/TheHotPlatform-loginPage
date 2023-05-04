@@ -6,7 +6,7 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import FirstPage from './Busniess-account/firstPage'
+import FirstPage from './Busniess-account/FirstPage'
 import Security from './Busniess-account/Security'
 import BusinessInfo from './Busniess-account/BusinessInfo'
 import BusinessInfo2 from './Busniess-account/BusinessInfo2'
