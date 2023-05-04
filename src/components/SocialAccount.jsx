@@ -72,7 +72,7 @@ export default function SocialAccount() {
                         return (
                             <Step 
                             className=' '
-                            key={label} 
+                            key={index} 
                             {...stepProps}>
                                 <StepLabel className="flex flex-col  py-4 " {...labelProps}>{label}</StepLabel>
                             </Step>
@@ -85,8 +85,8 @@ export default function SocialAccount() {
             </div>
             {activeStep === steps.length ? (
                 <React.Fragment>
-                    <Typography sx={{ mt: 2, mb: 1 }}>
-                    <p className='font-bold'>Successfully Registered</p>
+                    <Typography className='font-bold' sx={{ mt: 2, mb: 1 }}>
+                    Successfully Registered
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Box sx={{ flex: '1 1 auto' }} />

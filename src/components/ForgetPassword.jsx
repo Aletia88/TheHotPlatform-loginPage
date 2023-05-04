@@ -4,13 +4,14 @@ import Box from '@mui/material/Box';
 
 
 
-const ForgetPassword= ({ onSubmit }) => {
+function ForgetPassword(){
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(email);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(`Email: ${email}`);
   };
+
 
   return (
     <Box className="flex w-screen flex-wrap items-center sm:no-wrap justify-center " sx={{ width: '100%' }} >
@@ -33,7 +34,10 @@ const ForgetPassword= ({ onSubmit }) => {
 
           </div>
           <button
-         type="Password"
+          onChange={(e) => setEmail(e.target.value)}
+         type="email"
+         value={email}
+         id="email"
          className="transition duration-300 ease-in-out text-slate-50 cursor-pointer py-2 px-4 rounded-xl font-semibold  hover:bg-yellow-600  w-96 mb-10"
          >
         Reset Password
