@@ -10,8 +10,8 @@ import FirstPage from './Busniess-account/firstPage'
 import Security from './Busniess-account/Security'
 import ProfessionalInfo from './ProfessionalAccount/ProfessionalInfo'
 import ProfessionalInfo2 from './ProfessionalAccount/ProfessionalInfo2'
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import createPalette from 'material-ui/styles/palette'
+// import { MuiThemeProvider, createMuiTheme } from '@mui/material/styles';
+// import createPalette from 'material-ui/styles/palette'
 
 
 // import Stepper from './Stepper'
@@ -28,11 +28,11 @@ const steps = [
 export default function ProfessionalAccount() {
 
     // const [currentStep, setCurrentStep] = useState(1);
-    const muiTheme =  createMuiTheme({
-      stepper: {
-          iconColor: 'golden' // or logic to change color
-      }
-  })
+  //   const muiTheme =  createMuiTheme({
+  //     stepper: {
+  //         iconColor: 'golden' // or logic to change color
+  //     }
+  // })
 
   const [activeStep, setActiveStep] = React.useState(-1);
     
@@ -79,7 +79,7 @@ export default function ProfessionalAccount() {
     sx={{ width: '100%' }}>
         <Logo />
         <div className='flex  md:h-screen flex-col justify-center align-middle items-center  w-full sm:w-3/5'>
-        <MuiThemeProvider muiTheme={muiTheme}>
+       
         <Stepper activeStep={activeStep}>
             {steps.map((label, index) => {
                 const stepProps = {};
@@ -95,7 +95,7 @@ export default function ProfessionalAccount() {
                     )
                 })}
         </Stepper>
-        </MuiThemeProvider>
+      
         <div   className= "w-full flex items-center justify-center" > 
 
        {displayStep(activeStep) }
@@ -103,11 +103,11 @@ export default function ProfessionalAccount() {
         {activeStep === steps.length ? (
             <React.Fragment>
                 <Typography sx={{ mt: 2, mb: 1 }}>
-                    All steps completed - you&apos;re finished
+                    <p className='font-bold'>Successfully Registered</p>
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                     <Box sx={{ flex: '1 1 auto' }} />
-                    <Button onClick={handleReset}>Reset</Button>
+                    {/* <Button onClick={handleReset}>Reset</Button> */}
                 </Box>
             </React.Fragment>
         ) : (

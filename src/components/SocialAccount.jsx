@@ -6,15 +6,15 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import FirstPage from './Busniess-account/firstPage'
-import Security from './Busniess-account/Security'
-import BusinessInfo from './Busniess-account/BusinessInfo'
-import BusinessInfo2 from './Busniess-account/BusinessInfo2'
+import FirstPage from './Social-account/FirstPage'
+import Security from './Social-account/Security'
+import SocialInfo from './Social-account/SocialInfo'
+import SocialInfo2 from './Social-account/SocialInfo2'
 import Logo from './Logo';
 
-const steps = ['Personal Info', 'Business Info', 'Business Info ', 'Security'];
+const steps = ['Personal Info', 'Social Info', 'Social Info ', 'Security'];
 
-export default function BusinessAccount() {
+export default function SocialAccount() {
     const [activeStep, setActiveStep] = React.useState(-1);
     
     const handleNext = () => {
@@ -44,9 +44,9 @@ export default function BusinessAccount() {
             case 0:
                 return <FirstPage />
             case 1:
-                return <BusinessInfo />
+                return <SocialInfo />
             case 2:
-                return <BusinessInfo2 />
+                return <SocialInfo2 />
             case 3:
                 return <Security />
         }

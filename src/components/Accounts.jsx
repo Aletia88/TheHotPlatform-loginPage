@@ -3,18 +3,19 @@ import Options from './Options';
 import { Link } from 'react-router-dom';
 
 
-const Account = ({ open, onClose }) => {
+const Account = ({open, onClose }) => {
     if (!open) return null;
     return (
-      <div onClick={onClose} className='overlay'>
+      <div onClick={onClose} className='overlay h-screen'>
         <div
           onClick={(e) => {
             e.stopPropagation();
           }}
           className='modalContainer'
+          
         >
-              <div className='shadow w-96 md:w-full  p-7 rounded-md bg-white modal-container'>
-              <p className='text-lg text-black py-8 font-medium title1 text-center'>Choose account you want to sign up for</p>
+              <div className='shadow w-96 md:w-full  p-7 rounded-lg bg-white modal-container '>
+              <p className='md:text-lg text-base text-black py-8 font-medium title1 text-center'>Choose account you want to sign up for</p>
            <div>
             <Link to="/Business-account">
                 <Options 
