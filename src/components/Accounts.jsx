@@ -1,6 +1,9 @@
 import React from 'react'
 import Options from './Options';
 import { Link } from 'react-router-dom';
+import busniesss from '../assets/images/busniesss.png'
+import social from '../assets/images/social.png'
+import professional from '../assets/images/professional.png'
 
 
 const Account = ({open, onClose }) => {
@@ -19,7 +22,7 @@ const Account = ({open, onClose }) => {
            <div>
             <Link to="/Business-account">
                 <Options 
-                img="busniesss" 
+                img={busniesss} 
                 title="Busniess Account"
                 p="sign up or in as a business personnel"
                 
@@ -27,14 +30,14 @@ const Account = ({open, onClose }) => {
 
                 <Link to="/SocialAccount">
                 <Options 
-                img="social" 
+                img={social} 
                 title="Social Account"
                 p="sign up or in as a Social personnel"
                 
                 /></Link>
                 <Link to="/ProfessionalAccount">
                 <Options 
-                img="professional" 
+                img={professional}
                 title="Professional Account"
                 p="sign up or in as a business personnel"
                 
